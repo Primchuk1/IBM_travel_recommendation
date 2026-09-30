@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recommendation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav aria-label="Main navigation">
+        <a class="logo" href="travel_recommendation.html" aria-label="Travel Recommendation home">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <ellipse cx="12" cy="12" rx="4" ry="10" />
+                <path d="M2 12h20M4 6h16M4 18h16" />
+            </svg>
+            <span>Travel Recommendation</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="travel_recommendation.html" aria-current="page">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+        <div class="search-controls" role="search" aria-label="Destination search">
+            <input type="text" id="destination_input" aria-label="Search destinations or keywords"
+                placeholder="Search destinations or keywords...">
+            <button type="button" id="btnSearch">Search</button>
+            <button type="button" id="btnReset">Reset</button>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Your next adventure starts here.</h1>
+        <p>Discover beautiful beaches, unforgettable cities, and hidden gems.
+            Travel Recommendation helps you find destinations that match your interests
+            and inspire your next getaway.</p>
+        <button type="button" onclick="document.getElementById('destination_input').focus()">Book Now</button>
+
+        <div id="recommendations"></div>
+
+        <div class="social-links" aria-label="Social media links">
+            <a href="https://x.com/" target="_blank" rel="noopener noreferrer">X</a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+    </main>
+    <script src="travel_recommendation.js"></script>"
+</body>
+
+</html>
